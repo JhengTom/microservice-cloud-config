@@ -1,0 +1,18 @@
+#注意:如果在記事本上編寫，下面的縮進不要使用Tab來縮進，不然報錯
+spring:
+  profiles:
+    active: dev # 激活開發環境配置
+---
+server:
+  port: 4001 #端口號
+spring:
+  profiles: dev # 開發環境
+  application:
+    name: microservice-config-dev
+---
+server:
+  port: 4002 #端口號
+spring:
+  profiles: prod # 生產環境
+  application:
+    name: microservice-config-prod #保存時注意，選擇 UTF-8 保存
